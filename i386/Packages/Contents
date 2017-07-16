@@ -101,6 +101,8 @@ etc/frisbee/dhcpcd.conf					    frisbee
 etc/frisbee/frisbee.conf				    frisbee
 etc/frisbee/wpa_supplicant.conf				    frisbee
 etc/gconf/gconf.xml.defaults/%gconf-tree.xml		    gnome-mplayer-1.0.7
+etc/init.d/firewall-ng.sh				    firewall-ng
+etc/init.d/firewall.sh					    peasyfwmon
 etc/init.d/frisbee					    frisbee
 etc/init.d/network.sh					    wifibox-dhcpcd,wifibox
 etc/init.d/rc.functions					    wifibox-dhcpcd,wifibox
@@ -132,6 +134,7 @@ etc/ppp/chatscripts/gprs-connect-chat			    frisbee
 etc/ppp/chatscripts/gprs-disconnect-chat		    frisbee
 etc/ppp/options.gprs					    frisbee
 etc/precord/.precordrc					    precord
+etc/rc.d/rc.firewall.pfm				    peasyfwmon
 etc/rcS.conf						    wifibox-dhcpcd,wifibox
 etc/skel/.config/rox.sourceforge.net/MIME-types/application jwm-setup
 etc/skel/.config/rox.sourceforge.net/MIME-types/image_png   jwm-setup
@@ -170,6 +173,7 @@ etc/skel/Startup/firewall-puppy				    Firewall-Puppy
 etc/skel/Startup/killmenu-cached			    jwm-setup
 etc/skel/Startup/netmon_wce				    wifibox
 etc/skel/Startup/network_tray.sh			    sns,wifibox-dhcpcd
+etc/skel/Startup/peasyfwmon_tray			    peasyfwmon
 etc/skel/startup-jwm					    jwm-setup
 etc/slim.conf						    slim
 etc/slitaz/dhcpcd.conf					    wifibox-dhcpcd
@@ -234,6 +238,7 @@ home/puppy/Startup/firewall-puppy			    Firewall-Puppy
 home/puppy/Startup/killmenu-cached			    jwm-setup
 home/puppy/Startup/netmon_wce				    wifibox
 home/puppy/Startup/network_tray.sh			    sns,wifibox-dhcpcd
+home/puppy/Startup/peasyfwmon_tray			    peasyfwmon
 home/puppy/startup-jwm					    jwm-setup
 lib/dhcpcd/dhcpcd-hooks					    frisbee,wifibox-dhcpcd
 lib/dhcpcd/dhcpcd-hooks/01-test				    sns
@@ -10344,12 +10349,14 @@ root/.xhippo/playlists/0default.d/US_kpub.pls		    xhippo
 root/.xhippo/playlists/0default.d/US_kuat128.mp3.m3u	    xhippo
 root/.xhippo/winstate					    xhippo
 root/.xsession-jwm					    jwm-setup
+root/Startup/exec_fwstatus-autostart			    firewall-ng
 root/Startup/exec_lxinput-autostart			    lxinputsave
 root/Startup/exec_lxrandr-autostart			    lxrandr-save-fix
 root/Startup/firewall-puppy				    Firewall-Puppy
 root/Startup/killmenu-cached				    jwm-setup
 root/Startup/netmon_wce					    wifibox
 root/Startup/network_tray.sh				    sns,wifibox-dhcpcd
+root/Startup/peasyfwmon_tray				    peasyfwmon
 root/startup-jwm					    jwm-setup
 sbin/cryptsetup						    cryptsetup-bin
 sbin/cryptsetup-reencrypt				    cryptsetup-bin
@@ -10396,6 +10403,7 @@ usr/bin/ffmpeg						    ffmpeg
 usr/bin/findnrun					    findnrun
 usr/bin/firefox						    firefox-esr,palemoon
 usr/bin/firefox-esr					    firefox-esr
+usr/bin/firewallstatus					    firewall-ng
 usr/bin/flashpeak-slimjet				    slimjet
 usr/bin/flburn						    flburn
 usr/bin/flite_hts_engine				    flite-hts-engine
@@ -11238,6 +11246,8 @@ usr/local/bin/echinus					    echinus
 usr/local/bin/exec_desktopfile.awk			    lxrandr-save-fix
 usr/local/bin/firewall_install				    Firewall-Puppy
 usr/local/bin/firewall_install.sh			    Firewall-Puppy
+usr/local/bin/firewall_ng				    firewall-ng
+usr/local/bin/firewallstatusrestart			    firewall-ng
 usr/local/bin/fixdepinstall				    fixdepinstall
 usr/local/bin/flashplayerchoice				    flashplayerchoice
 usr/local/bin/flitet					    flite-hts-engine
@@ -11248,6 +11258,11 @@ usr/local/bin/freememapplet_start			    freememapplettray
 usr/local/bin/freememapplet_stop			    freememapplettray
 usr/local/bin/freememapplet_tray			    freememapplettray
 usr/local/bin/gethosts					    debdog-advert-blocker
+usr/local/bin/gifdance					    gifdance
+usr/local/bin/gifenc					    gifenc
+usr/local/bin/gifenc-sel				    gifenc
+usr/local/bin/gifondesktop				    gifondesktop
+usr/local/bin/gifshow					    gifondesktop
 usr/local/bin/gnome-mplayer				    gnome-mplayer-1.0.7
 usr/local/bin/grldr					    debdoginstallscripts
 usr/local/bin/gsu					    gsu
@@ -11272,14 +11287,16 @@ usr/local/bin/loadmodulegui				    sfsload
 usr/local/bin/loadsfs					    sfsload
 usr/local/bin/loadsfs-fuse				    portablesfs-loadsfs-fuse
 usr/local/bin/loadsfs-fuse-writesfs			    portablesfs-loadsfs-fuse
+usr/local/bin/locale-conf				    locale-conf
 usr/local/bin/logout-lumina				    lumina-desktop-debdog
 usr/local/bin/lspart					    debdogmountscripts
-usr/local/bin/m-play					    youtube-get2,youtube-get
+usr/local/bin/m-play					    youtube-get,youtube-get2
 usr/local/bin/make-deb-package				    makedebpackage
 usr/local/bin/make-swap					    makeswap
 usr/local/bin/make-xhippo-playlist			    xhippo
 usr/local/bin/menu-openbox				    jwm-setup
 usr/local/bin/menumaker					    desktop-editor
+usr/local/bin/mkiso					    quick-remaster
 usr/local/bin/mnt-all					    debdogmountscripts
 usr/local/bin/mnt-backing				    debdogmountscripts
 usr/local/bin/mnt-img					    filemnt-rox,filemnt-thunar
@@ -11290,6 +11307,7 @@ usr/local/bin/move-in-crypt				    move-in-crypt
 usr/local/bin/mplayer					    gnome-mplayer-1.0.7
 usr/local/bin/openbox-menu				    jwm-setup
 usr/local/bin/ourico					    ourico
+usr/local/bin/peasyfwmon				    peasyfwmon
 usr/local/bin/peasyglue					    peasyglue
 usr/local/bin/peasyscale				    peasyscale
 usr/local/bin/peasyscale.bin				    peasyscale
@@ -11322,6 +11340,7 @@ usr/local/bin/start-redshiftgui				    redshiftgui
 usr/local/bin/start-stop-slim				    slim
 usr/local/bin/transmission				    transmission-2.31
 usr/local/bin/transmission-gtk				    transmission-2.31
+usr/local/bin/txt2svg					    txt2svg
 usr/local/bin/upgrade-kernel				    upgrade-kernel
 usr/local/bin/upgrade-kernel-start			    upgrade-kernel
 usr/local/bin/weav					    weav
@@ -13013,6 +13032,49 @@ usr/local/conky-clock2/theme/small/97base.png		    conkyclock2
 usr/local/conky-clock2/theme/small/98base.png		    conkyclock2
 usr/local/conky-clock2/theme/small/99base.png		    conkyclock2
 usr/local/conky-clock2/theme/small/9base.png		    conkyclock2
+usr/local/dancingletters/!.gif				    gifdance
+usr/local/dancingletters/$.gif				    gifdance
+usr/local/dancingletters/&.gif				    gifdance
+usr/local/dancingletters/0.gif				    gifdance
+usr/local/dancingletters/1.gif				    gifdance
+usr/local/dancingletters/2.gif				    gifdance
+usr/local/dancingletters/3.gif				    gifdance
+usr/local/dancingletters/4.gif				    gifdance
+usr/local/dancingletters/5.gif				    gifdance
+usr/local/dancingletters/6.gif				    gifdance
+usr/local/dancingletters/7.gif				    gifdance
+usr/local/dancingletters/8.gif				    gifdance
+usr/local/dancingletters/9.gif				    gifdance
+usr/local/dancingletters/@.gif				    gifdance
+usr/local/dancingletters/A.gif				    gifdance
+usr/local/dancingletters/B.gif				    gifdance
+usr/local/dancingletters/C.gif				    gifdance
+usr/local/dancingletters/D.gif				    gifdance
+usr/local/dancingletters/E.gif				    gifdance
+usr/local/dancingletters/F.gif				    gifdance
+usr/local/dancingletters/G.gif				    gifdance
+usr/local/dancingletters/H.gif				    gifdance
+usr/local/dancingletters/I.gif				    gifdance
+usr/local/dancingletters/J.gif				    gifdance
+usr/local/dancingletters/K.gif				    gifdance
+usr/local/dancingletters/L.gif				    gifdance
+usr/local/dancingletters/M.gif				    gifdance
+usr/local/dancingletters/N.gif				    gifdance
+usr/local/dancingletters/O.gif				    gifdance
+usr/local/dancingletters/P.gif				    gifdance
+usr/local/dancingletters/Q.gif				    gifdance
+usr/local/dancingletters/R.gif				    gifdance
+usr/local/dancingletters/S.gif				    gifdance
+usr/local/dancingletters/T.gif				    gifdance
+usr/local/dancingletters/U.gif				    gifdance
+usr/local/dancingletters/V.gif				    gifdance
+usr/local/dancingletters/W.gif				    gifdance
+usr/local/dancingletters/X.gif				    gifdance
+usr/local/dancingletters/Y.gif				    gifdance
+usr/local/dancingletters/Y.giff				    gifdance
+usr/local/dancingletters/Z.gif				    gifdance
+usr/local/dancingletters/_.gif				    gifdance
+usr/local/dancingletters/q.gif				    gifdance
 usr/local/desktop_view_edit/desktop_view_edit		    desktop-editor
 usr/local/desktop_view_edit/func			    desktop-editor
 usr/local/desktop_view_edit/gtkrc_size			    desktop-editor
@@ -13036,6 +13098,16 @@ usr/local/etc/dillo/domainrc				    dillo
 usr/local/etc/dillo/dpidrc				    dillo
 usr/local/etc/dillo/keysrc				    dillo
 usr/local/etc/xhippo.config				    xhippo
+usr/local/isodata/Examples-boot-codes.txt		    quick-remaster
+usr/local/isodata/isolinux/boot.cat			    quick-remaster
+usr/local/isodata/isolinux/isolinux.bin			    quick-remaster
+usr/local/isodata/isolinux/isolinux.cfg			    quick-remaster
+usr/local/isodata/isolinux/live.cfg			    quick-remaster
+usr/local/isodata/isolinux/menu.cfg			    quick-remaster
+usr/local/isodata/isolinux/splash.png			    quick-remaster
+usr/local/isodata/isolinux/stdmenu.cfg			    quick-remaster
+usr/local/isodata/isolinux/vesamenu.c32			    quick-remaster
+usr/local/isodata/live/jessie-i486.sgn			    quick-remaster
 usr/local/lib/X11/mini-icons				    frisbee,wifibox-dhcpcd
 usr/local/lib/X11/mini-icons/info16.xpm			    sns
 usr/local/lib/X11/mini-icons/mini-question.xpm		    sns
@@ -13878,19 +13950,25 @@ usr/share/X11/xdm/pixmaps/debianbw.xpm			    xdm
 usr/share/X11/xdm/pixmaps/xorg-bw.xpm			    xdm
 usr/share/X11/xdm/pixmaps/xorg.xpm			    xdm
 usr/share/aclocal/yad.m4				    yad
+usr/share/applications/ Text to SVG_PNG Fancy Text and Logo Generator.desktop txt2svg
+usr/share/applications/Animated Gif on Desktop.desktop	    gifondesktop
 usr/share/applications/ConkyClock.desktop		    conkyclock
 usr/share/applications/ConkyClock2.desktop		    conkyclock2
 usr/share/applications/Create-module-from-changes.desktop   remaster-scripts
+usr/share/applications/Dancing Letters to GIF.desktop	    gifdance
 usr/share/applications/DebianDog-Full-Installer.desktop	    debdoginstallscripts
 usr/share/applications/DebianDog-Installer.desktop	    debdoginstallscripts
 usr/share/applications/DogRadio.desktop			    dogradio
+usr/share/applications/GifenC (video to _gif).desktop	    gifenc
 usr/share/applications/Grub4DosConfig.desktop		    grub4dosconfig
 usr/share/applications/ISO-Tools.desktop		    isotools
 usr/share/applications/Jwm.desktop			    jwm
+usr/share/applications/Make ISO from frugal install.desktop quick-remaster
 usr/share/applications/Make Swap.desktop		    makeswap
-usr/share/applications/Play_with_mplayer.desktop	    youtube-get2,youtube-get
+usr/share/applications/Play_with_mplayer.desktop	    youtube-get,youtube-get2
 usr/share/applications/Remaster-DebianDog.desktop	    remaster-scripts
 usr/share/applications/SFS-Load-GUI.desktop		    sfsload
+usr/share/applications/Set Locale_Language.desktop	    locale-conf
 usr/share/applications/SfsGet.desktop			    sfsget
 usr/share/applications/Thunar-bulk-rename.desktop	    thunar
 usr/share/applications/Thunar-folder-handler.desktop	    thunar
@@ -13915,6 +13993,8 @@ usr/share/applications/ffconvert.desktop		    ffconvert
 usr/share/applications/findnrun.desktop			    findnrun
 usr/share/applications/firefox-esr.desktop		    firefox-esr
 usr/share/applications/firewall-puppy.desktop		    Firewall-Puppy
+usr/share/applications/firewall-setup.desktop		    firewall-ng
+usr/share/applications/firewallstatus.desktop		    firewall-ng
 usr/share/applications/fixdepinstall.desktop		    fixdepinstall
 usr/share/applications/flashplayerchoice.desktop	    flashplayerchoice
 usr/share/applications/flburn.desktop			    flburn
@@ -13944,6 +14024,7 @@ usr/share/applications/osmo.desktop			    osmo-portable
 usr/share/applications/palemoon.desktop			    palemoon
 usr/share/applications/pavrecord.desktop		    pavrecord
 usr/share/applications/pburn.desktop			    pburn
+usr/share/applications/peasy_firewall_monitor.desktop	    peasyfwmon
 usr/share/applications/peasyglue.desktop		    peasyglue
 usr/share/applications/peasyscale.desktop		    peasyscale
 usr/share/applications/pfind.desktop			    pfind
@@ -14289,6 +14370,17 @@ usr/share/fonts/wingding.ttf				    wps-office
 usr/share/frisbee/connect				    frisbee
 usr/share/frisbee/disconnect				    frisbee
 usr/share/frisbee/func					    frisbee
+usr/share/gifondesktop/deb1.gif				    gifondesktop
+usr/share/gifondesktop/deb2.gif				    gifondesktop
+usr/share/gifondesktop/dog-image.gif			    gifondesktop
+usr/share/gifondesktop/dogrun-red.gif			    gifondesktop
+usr/share/gifondesktop/dogsrunning.gif			    gifondesktop
+usr/share/gifondesktop/earth128.gif			    gifondesktop
+usr/share/gifondesktop/earth273.gif			    gifondesktop
+usr/share/gifondesktop/earth64.gif			    gifondesktop
+usr/share/gifondesktop/hound.gif			    gifondesktop
+usr/share/gifondesktop/hound245.gif			    gifondesktop
+usr/share/gifondesktop/snoopy.gif			    gifondesktop
 usr/share/gnome-control-center/default-apps/slimjet.xml	    slimjet
 usr/share/gnome/help/xvidcap/C/figures/back-button.png	    xvidcap
 usr/share/gnome/help/xvidcap/C/figures/edit-button.png	    xvidcap
@@ -17066,7 +17158,7 @@ usr/share/menu/lumina-info				    lumina-desktop-debdog
 usr/share/menu/lumina-screenshot			    lumina-desktop-debdog
 usr/share/menu/lumina-search				    lumina-desktop-debdog
 usr/share/menu/lxinput					    lxinputsave
-usr/share/menu/m-play					    youtube-get2,youtube-get
+usr/share/menu/m-play					    youtube-get,youtube-get2
 usr/share/menu/menumaker				    desktop-editor
 usr/share/menu/midori					    midori
 usr/share/menu/mount-wizard				    mount-wizard
@@ -17180,6 +17272,7 @@ usr/share/pixmaps/ceni-16.xpm				    ceni
 usr/share/pixmaps/ceni.xpm				    ceni
 usr/share/pixmaps/clock_face33.png			    conkyclock2
 usr/share/pixmaps/clock_face45.png			    conkyclock
+usr/share/pixmaps/dancegif.png				    gifdance
 usr/share/pixmaps/debdog-advert-blocker.png		    debdog-advert-blocker
 usr/share/pixmaps/dillo.png				    dillo
 usr/share/pixmaps/dillo.xpm				    dillo
@@ -17196,6 +17289,8 @@ usr/share/pixmaps/fd.png				    mount-wizard
 usr/share/pixmaps/fd2.png				    mount-wizard-2
 usr/share/pixmaps/ffconvert.png				    ffconvert
 usr/share/pixmaps/firefox-esr.png			    firefox-esr
+usr/share/pixmaps/firewall-24.png			    peasyfwmon
+usr/share/pixmaps/firewall-48.png			    peasyfwmon
 usr/share/pixmaps/flash.png				    flashplayerchoice
 usr/share/pixmaps/floppy24.png				    mount-wizard
 usr/share/pixmaps/folder24.png				    jwm-setup
@@ -17203,6 +17298,9 @@ usr/share/pixmaps/folder48.png				    jwm-setup
 usr/share/pixmaps/freemem-off.xpm			    freememapplettray
 usr/share/pixmaps/freemem-on.xpm			    freememapplettray
 usr/share/pixmaps/frisbee.png				    frisbee
+usr/share/pixmaps/gif-file.png				    gifondesktop
+usr/share/pixmaps/gifenc.png				    gifenc
+usr/share/pixmaps/gifencc.png				    gifenc
 usr/share/pixmaps/gnibbles.png				    grub4dosconfig
 usr/share/pixmaps/go-next.png				    youtube-get2
 usr/share/pixmaps/go-previous.png			    youtube-get2
@@ -17225,11 +17323,13 @@ usr/share/pixmaps/isotools.png				    isotools
 usr/share/pixmaps/isousb.png				    isotools
 usr/share/pixmaps/keditbookmarks.xpm			    resize-save-file
 usr/share/pixmaps/loadsfs.png				    portablesfs-loadsfs-fuse
+usr/share/pixmaps/locale8.png				    locale-conf
 usr/share/pixmaps/lock.png				    jwm-setup
 usr/share/pixmaps/login.png				    slim
 usr/share/pixmaps/logout.png				    jwm-setup
 usr/share/pixmaps/makedebpkg.png			    makedebpackage
-usr/share/pixmaps/mplayer.png				    youtube-get2,youtube-get
+usr/share/pixmaps/mkiso.png				    quick-remaster
+usr/share/pixmaps/mplayer.png				    youtube-get,youtube-get2
 usr/share/pixmaps/mpv.png				    mpv
 usr/share/pixmaps/network-workgroup.png			    sns
 usr/share/pixmaps/notecase.xpm				    notecase-portable
@@ -17251,6 +17351,7 @@ usr/share/pixmaps/puppy/cell_1.svg			    wifibox
 usr/share/pixmaps/puppy/cell_2.svg			    wifibox
 usr/share/pixmaps/puppy/cell_3.svg			    wifibox
 usr/share/pixmaps/puppy/cell_4.svg			    wifibox
+usr/share/pixmaps/puppy/firewall.svg			    firewall-ng
 usr/share/pixmaps/puppy/internet_connect.svg		    wifibox
 usr/share/pixmaps/puppy/internet_connect1.svg		    wifibox
 usr/share/pixmaps/puppy/internet_connect1_both.svg	    wifibox
@@ -17270,6 +17371,9 @@ usr/share/pixmaps/puppy/qual_6.svg			    wifibox
 usr/share/pixmaps/puppy/qual_7.svg			    wifibox
 usr/share/pixmaps/puppy/qual_8.svg			    wifibox
 usr/share/pixmaps/puppy/qual_9.svg			    wifibox
+usr/share/pixmaps/puppy/shield_internet.svg		    firewall-ng
+usr/share/pixmaps/puppy/shield_no.svg			    firewall-ng
+usr/share/pixmaps/puppy/shield_yes.svg			    firewall-ng
 usr/share/pixmaps/re-fresh.png				    quick-remaster
 usr/share/pixmaps/reboot-lumina.png			    lumina-desktop-debdog
 usr/share/pixmaps/restart.png				    jwm-setup
@@ -17288,6 +17392,7 @@ usr/share/pixmaps/suspend.png				    jwm-setup
 usr/share/pixmaps/swap2.png				    makeswap
 usr/share/pixmaps/switch.png				    jwm-setup
 usr/share/pixmaps/transmission.png			    transmission-2.31
+usr/share/pixmaps/txt2svg.svg				    txt2svg
 usr/share/pixmaps/upgrade-kernel.png			    upgrade-kernel
 usr/share/pixmaps/xfe.png				    xfe
 usr/share/pixmaps/xfe.xpm				    xfe

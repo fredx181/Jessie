@@ -95,5 +95,5 @@ done
 
 loadmodule -a ../../../git.squashfs
 
-. ../../../gitpushjessie
+. ../../../gitfredx
 

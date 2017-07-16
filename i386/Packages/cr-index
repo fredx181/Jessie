@@ -90,7 +90,7 @@ echo '<p STYLE="font-size: 13px;" class="big">'"<a href="$(dirname ${DOMAIN}${SU
 #    $1 is absolute document_root with trailing '/'
 #    $2 is subdir like '/subdir/' if thats the web root, '/' if no subdir
 #    $3 is the domain 'subdomain.domain.tld'
-create_gnu_index "./" "$BASE" "https://debiandog.github.io/Jessie/i386/"
+create_gnu_index "./" "$BASE" "https://fredx181.github.io/Jessie/i386/"
  
 # takes about 1-5 seconds to complete
 exit
