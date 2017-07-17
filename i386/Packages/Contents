@@ -4211,6 +4211,7 @@ usr/local/apps/zenity/zen/usr/share/zenity/zenity-text.png  zenity-portable
 usr/local/apps/zenity/zen/usr/share/zenity/zenity.png	    zenity-portable
 usr/local/apps/zenity/zen/usr/share/zenity/zenity.ui	    zenity-portable
 usr/local/apps/zenity/zenity				    zenity-portable
+usr/local/bin/QtWeb					    qtweb
 usr/local/bin/Readme_loadsfs-fuse-writesfs		    portablesfs-loadsfs-fuse
 usr/local/bin/apt2sfs					    apt2sfs
 usr/local/bin/apt2sfs-fullinst				    apt2sfs
@@ -7017,6 +7018,7 @@ usr/share/applications/peasyglue.desktop		    peasyglue
 usr/share/applications/peasyscale.desktop		    peasyscale
 usr/share/applications/pfind.desktop			    pfind
 usr/share/applications/precord.desktop			    precord
+usr/share/applications/qtweb.desktop			    qtweb
 usr/share/applications/quick-remaster.desktop		    quick-remaster
 usr/share/applications/quick-remastergui.desktop	    quick-remaster
 usr/share/applications/redshiftgui.desktop		    redshiftgui
@@ -10202,6 +10204,7 @@ usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/spinner.gif youtube-view
 usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/user.png youtube-viewer
 usr/share/pixmaps/Insight-FileManager.png		    lumina-desktop-debdog
 usr/share/pixmaps/Lumina-DE.png				    lumina-desktop-debdog
+usr/share/pixmaps/QtWeb.png				    qtweb
 usr/share/pixmaps/application-x-squashfs.png		    sfs-get-smokey-get
 usr/share/pixmaps/application-x-squashfs2.png		    remaster-scripts
 usr/share/pixmaps/application-x-squashfs3.png		    quick-remaster

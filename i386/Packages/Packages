@@ -1810,22 +1810,6 @@ Description:  findnrun 1.10.6 (utility)
   icons, smaller English help (markdown), NLS .pot.
   https://github.com/step-/find-n-run/ 
 
-Package: locale-conf
-Priority: optional
-Section: utilities
-Installed-Size: 50
-Maintainer: root
-Architecture: all
-Version: 1.0.0-s
-Depends: libc6, httpfs2, yad
-Filename: ./Extra/locale-conf_1.0.0-s_all.deb
-Size: 16728
-MD5sum: 62b80e0f1fe1a3d2129c8df520c97b3a
-SHA1: 59d344d54cb24a7055828387ef94ec1b638d8828
-SHA256: 6bb4106724ed48a5fa0c91f863596297395839af8cf52949bcbc67826197e0cd
-SHA512: b5bdef0db9488c55a32f4c172b5347bdf5ce56cbf456461e45fe3397409c1e872321339f59ce24372c8438057a6c10da6e35fc713e1d92a927c6ca1eda9cde64
-Description: Set system locale
-
 Package: grub4dosconfig
 Installed-Size: 420
 Maintainer: root
@@ -2469,6 +2453,22 @@ SHA256: ed7a1daeb6b8c426b6f2ab3f7e2c4564ca721d34e823e2814946293fc8947da9
 SHA512: 1549e9b0aa0a49978605a75c50766c633659d417306f1dc6efa1ab176ec7913460599cde89f83323094803178a18efbe1829d86d000c2a01ffbd08938b477933
 Description: Light window manager
 
+Package: locale-conf
+Priority: optional
+Section: utilities
+Installed-Size: 50
+Maintainer: root
+Architecture: all
+Version: 1.0.0-j
+Depends: libc6, httpfs2, yad
+Filename: ./Extra/locale-conf_1.0.0-j_all.deb
+Size: 16706
+MD5sum: 4a1f1d0be8da4e023d947eea2d25b342
+SHA1: ca56b79ff15ed590e5fc9038bf78bd2a201b86f0
+SHA256: d678b7fd9ed170d0f771e6400905b94ac05d4a140a6a190b1ece6cc5ce29e70b
+SHA512: 7955eeed581a60817b12d2f33496da3cbc4be9a0613b85e96e6cca88a76b472da5a51cd5acf65ca238ed1d99d4616ee39ed0257d7f5345f54fe0f30e92bf0abb
+Description: Set system locale
+
 Package: libgnutls26
 Priority: standard
 Section: libs
@@ -3046,6 +3046,22 @@ SHA1: a726888df04de31ad5a3ef8d46a54c688db4f69f
 SHA256: 9560ce19e0c0420653cf64bcf9be232aa0e74e8e44ba3923849421b86f7762e3
 SHA512: 6fa176a0781b9cf3d6fec02d7f24e1f0d584f1ff616e1a6abeb6c8d68c6996230ae5e1597e0cfc8b16c7fe1682945bd54446806faf0339d83ec3777c94f3c805
 Description: Wireless Network manager
+
+Package: qtweb
+Priority: optional
+Section: utilities
+Installed-Size: 32700
+Maintainer: root
+Architecture: i386
+Version: 1.0.1
+Depends: libc6
+Filename: ./Extra/qtweb_1.0.1_i386.deb
+Size: 9635556
+MD5sum: e4e3f03fe9cb2b6db773bbe71aa56d17
+SHA1: 1b69e07412c3f5fdd121428bcbb153d079a59fc1
+SHA256: 5ca5c61107a992e6fc41f37fde1ddc377f1c15f630bc6ff8ff904dca410dfb27
+SHA512: f80945e088dc7371899e2aa90a6433a63e3ea74c9042947f77e52519de50048ae258608ae4e162613fbea0443a75f89326bb368c993b610fb424c14939ad07f7
+Description: qtweb-converted-pet-to-deb
 
 Package: peasyfwmon
 Priority: optional
