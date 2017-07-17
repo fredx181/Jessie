@@ -3733,6 +3733,7 @@ usr/lib/gio/modules/libpup-volume-monitor.so		    pup-volume-monitor
 usr/lib/grub4dos/default				    grub4dosconfig
 usr/lib/grub4dos/grldr					    grub4dosconfig
 usr/lib/grub4dos/wee.mbr				    grub4dosconfig
+usr/lib/gtk-2.0/modules/libgtk2desklet.so		    gtkdesklet
 usr/lib/i386-linux-gnu/Thunar/ThunarBulkRename		    thunar
 usr/lib/i386-linux-gnu/Thunar/thunar-sendto-email	    thunar
 usr/lib/i386-linux-gnu/libdconf.so.0			    libdconf0
@@ -4245,6 +4246,7 @@ usr/local/bin/gsu-notimeout				    gsu
 usr/local/bin/gsu-root					    remaster-scripts
 usr/local/bin/gsu-timeout				    gsu
 usr/local/bin/gsu-xterm					    gsu
+usr/local/bin/gtkdialog-desklet				    gtkdesklet
 usr/local/bin/guess_fstype				    guessfstype
 usr/local/bin/install-deb-and-dependencies		    fixdepinstall
 usr/local/bin/install-dir-debs-and-dependencies		    fixdepinstall
@@ -7106,6 +7108,7 @@ usr/share/doc/fontconfig-config/AUTHORS			    fontconfig-config
 usr/share/doc/fontconfig-config/README.gz		    fontconfig-config
 usr/share/doc/fontconfig-config/changelog.Debian.gz	    fontconfig-config
 usr/share/doc/fontconfig-config/copyright		    fontconfig-config
+usr/share/doc/gtk2desklet/help.txt			    gtkdesklet
 usr/share/doc/help/C/grub4dos.html			    grub4dosconfig
 usr/share/doc/help/C/grub4dosconfig.html		    grub4dosconfig
 usr/share/doc/help/images/gnibbles.png			    grub4dosconfig
@@ -13362,6 +13365,9 @@ usr/share/xvidcap/glade/xvidcap_logo.png		    xvidcap
 usr/share/xvidcap/ppm2mpeg.sh				    xvidcap
 usr/share/xvidcap/xvidcap.desktop			    xvidcap
 usr/share/xvidcap/xvidcap.png				    xvidcap
+usr/src/gtk2desklet/compile				    gtkdesklet
+usr/src/gtk2desklet/install				    gtkdesklet
+usr/src/gtk2desklet/libgtk2desklet.c			    gtkdesklet
 var/local/icons/frisbee.png				    frisbee
 var/local/sns/rx_bytes_month				    sns
 var/local/sns/rx_bytes_session				    sns
