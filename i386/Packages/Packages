@@ -2642,6 +2642,22 @@ SHA256: 0d21768c3377edac7455574bedc7c188186d0ef1ca757c891054f512fec0d92c
 SHA512: 567b34adfad7339d965dfc87bb0826a29435a1ddb21c1e21b5f8b04b9820ada2d92ce0bfd1a05ba6cee5bfd560dd7255b2a3b7dd3f8da28738844016a9c959b5
 Description: SMB/CIFS clients for Unix
 
+Package: create-portable
+Architecture: i386
+Version: 1.0.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 900
+Depends: libc6, unionfs-fuse, xorriso, yad, python, linux-user-chroot
+Filename: ./Extra/create-portable_1.0.0_i386.deb
+Size: 263534
+MD5sum: bab33debff71b9a41a3c9a653e12f832
+SHA1: 68129a22de5d401c4929ed4a28186f443f56dd68
+SHA256: cb976bd49fd1957d76bd371b7bbb55abe03d6ae2cbb9260ebfb92189b13367eb
+SHA512: c4db945c15da9d1c46f862006a6e8006aa18a7325a73fd4b5733d5bbc04a96e217d77fe7f88ea0cd650ee3d33e058c0a191408b6bc7a449e8a595ef1bb9070de
+Description: Create portable AppImage
+
 Package: xvidcap
 Architecture: i386
 Version: 1.1.7
