@@ -3416,6 +3416,9 @@ usr/bin/Thunar						    thunar
 usr/bin/Xdialog						    gtkdialog
 usr/bin/apulse						    apulse
 usr/bin/avconv						    ffmpeg
+usr/bin/bacon						    bacon
+usr/bin/bacon.sh					    bacon
+usr/bin/bacongui					    bacon
 usr/bin/cddetect					    pburn
 usr/bin/cddetect_quick					    pburn
 usr/bin/cdrecord					    pburn
@@ -3762,6 +3765,7 @@ usr/lib/libLuminaUtils.so				    lumina-desktop-debdog
 usr/lib/libLuminaUtils.so.1				    lumina-desktop-debdog
 usr/lib/libLuminaUtils.so.1.0				    lumina-desktop-debdog
 usr/lib/libLuminaUtils.so.1.0.0				    lumina-desktop-debdog
+usr/lib/libbacon.a					    bacon
 usr/lib/libcrypto.so.0.9.8				    libssl0.9.8
 usr/lib/libpupvm.a					    pup-volume-monitor
 usr/lib/libpupvm.la					    pup-volume-monitor
@@ -7011,6 +7015,7 @@ usr/share/applications/YouTube-Get.desktop		    youtube-get
 usr/share/applications/YouTube-Get2.desktop		    youtube-get2
 usr/share/applications/apt2sfs-fullinst.desktop		    apt2sfs
 usr/share/applications/apt2sfs.desktop			    apt2sfs
+usr/share/applications/bacongui.desktop			    bacon
 usr/share/applications/ceni.desktop			    ceni
 usr/share/applications/clear-changes.desktop		    quick-remaster
 usr/share/applications/com.teamviewer.TeamViewer.desktop    teamviewer
@@ -7130,6 +7135,10 @@ usr/share/doc/adwaita-icon-theme/NEWS.gz		    adwaita-icon-theme
 usr/share/doc/adwaita-icon-theme/README.gz		    adwaita-icon-theme
 usr/share/doc/adwaita-icon-theme/changelog.Debian.gz	    adwaita-icon-theme
 usr/share/doc/adwaita-icon-theme/copyright		    adwaita-icon-theme
+usr/share/doc/bacon/CHANGES				    bacon
+usr/share/doc/bacon/changelog.Debian.gz			    bacon
+usr/share/doc/bacon/changelog.gz			    bacon
+usr/share/doc/bacon/copyright				    bacon
 usr/share/doc/ceni/changelog.gz				    ceni
 usr/share/doc/ceni/copyright				    ceni
 usr/share/doc/cryptsetup-bin/NEWS.Debian.gz		    cryptsetup-bin
@@ -7297,6 +7306,7 @@ usr/share/doc/yad/TODO					    yad
 usr/share/doc/yad/changelog.Debian.gz			    yad
 usr/share/doc/yad/changelog.gz				    yad
 usr/share/doc/yad/copyright				    yad
+usr/share/enscript/hl/bacon.st				    bacon
 usr/share/epdfview/pixmaps/icon_epdfview-24.png		    epdfview
 usr/share/epdfview/pixmaps/icon_epdfview-32.png		    epdfview
 usr/share/epdfview/pixmaps/icon_epdfview-48.png		    epdfview
@@ -9907,6 +9917,7 @@ usr/share/man/es/man1/xvidcap.1.gz			    xvidcap
 usr/share/man/it/man1/xvidcap.1.gz			    xvidcap
 usr/share/man/man1/Ceni.1p.gz				    ceni
 usr/share/man/man1/Thunar.1.gz				    thunar
+usr/share/man/man1/bacon.1.gz				    bacon
 usr/share/man/man1/ceni.1p.gz				    ceni
 usr/share/man/man1/dillo.1.gz				    dillo
 usr/share/man/man1/epdfview.1.gz			    epdfview
@@ -10118,6 +10129,8 @@ usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/gtk-youtube-viewer.png y
 usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/spinner.gif youtube-viewer
 usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/user.png youtube-viewer
 usr/share/pixmaps/AppImageAssistant.png			    create-portable
+usr/share/pixmaps/BaCon.png				    bacon
+usr/share/pixmaps/BaCon24.png				    bacon
 usr/share/pixmaps/Insight-FileManager.png		    lumina-desktop-debdog
 usr/share/pixmaps/Lumina-DE.png				    lumina-desktop-debdog
 usr/share/pixmaps/QtWeb.png				    qtweb

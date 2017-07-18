@@ -9,35 +9,35 @@ Codename: jessie
 Architectures: i386
 Components: main
 Description: DebianDog repository
-Date: Mon, 17 Jul 2017 23:39:41 +0000
+Date: Tue, 18 Jul 2017 09:57:04 UTC
 MD5Sum:
- 5d917bbf18e31f47228025fbb37e9ce2           146004 Packages
- f6e0f7b87f7c0b400b3021b4f186f374            54978 Packages.gz
- f6760975402cd3afcaed85e4c44cc11f              185 Release
- f6e0f7b87f7c0b400b3021b4f186f374            54978 Translation-en.gz
+ 6db57c45a680a9182b3c579f73f15742           147107 Packages
+ 110752edff1c4fd0ca6991dd779c1cc8            55531 Packages.gz
+ 16d95e565f30490d2f5eb6e11391ce92              147 Release
+ 110752edff1c4fd0ca6991dd779c1cc8            55531 Translation-en.gz
 SHA1:
- fc3865d0b467590d114693851bfa7b76a6c3e4ec           146004 Packages
- de99cc8024688a06c5f0a8e14d8a40132ec7745c            54978 Packages.gz
- f5dad6fbacee97b1547f9aa494a9c2d9652e3376              185 Release
- de99cc8024688a06c5f0a8e14d8a40132ec7745c            54978 Translation-en.gz
+ a0b8fd7332a2914d91e99db049142108747a9b39           147107 Packages
+ a1531a85f1138d5b66e2cf9232476e9874ee762c            55531 Packages.gz
+ f7f9cdc238475cfc47c7813d70a42c0ff1a1e7b6              147 Release
+ a1531a85f1138d5b66e2cf9232476e9874ee762c            55531 Translation-en.gz
 SHA256:
- 7954fecb2071a818a1353c3e5c5c6950881880b668bf94441c659300c318bb8e           146004 Packages
- f7ea887728ca8cf8dde82002d01c4add950561b66fa2d9a5cb9a2115c0b17653            54978 Packages.gz
- b3fc948e4375066a5800521979142a233e478379238e4ac247708a222c1c6be8              185 Release
- f7ea887728ca8cf8dde82002d01c4add950561b66fa2d9a5cb9a2115c0b17653            54978 Translation-en.gz
+ 4302bffe6ac980f4de46201e190f6e584c4cbf61d6c5ba8b25376da07e1adb3a           147107 Packages
+ af5a12fde0ab39829a93a73a20f4c108706074313b41ea0ee6b355a332c131f8            55531 Packages.gz
+ 1fa55e4027dc946f1f5542b28f56c5e1f2c51794003c2d27761fadd9f411db3e              147 Release
+ af5a12fde0ab39829a93a73a20f4c108706074313b41ea0ee6b355a332c131f8            55531 Translation-en.gz
 SHA512:
- 55cb9ace3c89ceb5ffc53b788770312ac5b9d56c5dc3bba6e5ad25ab58d23c9e3296ab7bd0a191ce3a316f588d951ff6f1752dd233b14cbdf8be574c9f479266           146004 Packages
- 0b6c683717992e115ce1898f147f79eacdb1ae309be175d3f4aa04cf88b4b0dbab409b9b60b6ec3a62ac2f858519f8b749c7a8da1e995a690d587237ab11975e            54978 Packages.gz
- 49ac4304cdb7096ba69800d8e7cd20fa8f4300671d913382d5e35ef00d6f2bb8bb4ec71a99dbb6b98345f54b0741472e45a291558d60cbca412bb64f2ede9e6c              185 Release
- 0b6c683717992e115ce1898f147f79eacdb1ae309be175d3f4aa04cf88b4b0dbab409b9b60b6ec3a62ac2f858519f8b749c7a8da1e995a690d587237ab11975e            54978 Translation-en.gz
+ 3dbe966b5e51688b68382ec4826f8a69455c8aceb19172a0bd053fb6e9ae04d34a2226727f0fa8d1b103ae7f8849b66085e7a990c535e69e18966b4ce768f2f2           147107 Packages
+ 7a5bc2a39088f87babdce575af045282cb543dd5f14bd787a979f902feb27da85e1788ebefc73248ea05c0f9c8669a241d5c4f35c7f1679d57e6e5d3b8ae0ac3            55531 Packages.gz
+ 996e9c0931ed449630ff52d7cf68b109996b529e018d0638d047adf75159a63a3572c7dade7dcb92057f96bdccd7fa129d9c215130ff7c19efbe50db2148e3d5              147 Release
+ 7a5bc2a39088f87babdce575af045282cb543dd5f14bd787a979f902feb27da85e1788ebefc73248ea05c0f9c8669a241d5c4f35c7f1679d57e6e5d3b8ae0ac3            55531 Translation-en.gz
 -----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
 
-iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAlltSsoACgkQrYe8en1z
-CB0lvwf+OC/i59NjIzJiwR9x7GOf4s+JwZIjHnJIwZ15Nd+47CmIYK5wX3KatkF3
-kiUuZlPnWRThf87/xyS5YrEUrfi1gsdJ1XRIWiGe78fcrOx3qIl9gPombtKKXyzy
-6EtvpDYSA8FGKKdxQfqQbTCYo1yLv1Htd4JFa8W/5Kk8rSEX1ivFHRwdaq/kBLLl
-KxLUx+yFhgTY1wPnxGocLRzXsfWdDzTSU1VIEdUUqjOXWkTy+aQ0PVHbCFBvBri9
-00NB4Av9tFQVYWmxwcl/P3YEn6Yi1qusdiGdiTtwHtfS99wA/r/r/GRawsbaUqo+
-Ghlvuhgnuc7JARHFU4uQJZQzGfSp2A==
-=h9Uh
+iQEcBAEBCAAGBQJZbdt4AAoJEK2HvHp9cwgdh3YIAIJ9EE9CtFOhDzQPSkRDlN9B
+W4phuwCgpOaIdae2jn9Pj1l6mB56n1Hj6vDqNwdUvL16ufKF5vcSJtLH2df0ZOIl
+8kZlzvCiLyZVb7Gj5JkzRLuvqO7ji/4Twsw9KVQzIXix2k7m4Giz+XYspxQeo4/z
+vBqOcVS7TS5nYuPqvKspQ5Re6fatC5khjX+QUqptTRL1Z/R5+EU1O2oi/x3Lbad8
+OmENZUfCgqEo/znUQigGL/PAAGhX8jGDzrSagh3X2t+TEka7FM0ZjwiUGc7gbs+F
++Daw2Dq1AviNal/rFoiwQeup45XQkXYJrXLMM6mK+ZxJiKMYhu7GHw10j5FzGPA=
+=jaMN
 -----END PGP SIGNATURE-----
